@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Clicker Game</title>
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #f00;
+            color: #fff;
+            border: 2px solid #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #fff;
+            color: #f00;
+        }
+        #score {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Retro Clicker Game</h1>
+    <button onclick="score++;">Click me!</button>
+    <div id="score">Score: 0</div>
+
+    <script>
+        let score = 0;
+        setInterval(() => document.getElementById('score').innerText = 'Score: ' + score, 100);
+    </script>
+</body>
+</html>
